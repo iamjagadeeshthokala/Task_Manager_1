@@ -40,3 +40,9 @@ Responsive: Works on mobile and desktop.
 
 Tech Used: React, Material UI, Context API, localStorage.
 
+Pictures of Task Given Below
+![Screenshot 2025-04-30 201218](https://github.com/user-attachments/assets/589b4903-105e-42b2-b88c-05a0c58ac78b)
+![Screenshot 2025-04-30 201205](https://github.com/user-attachments/assets/4d556322-bf35-4182-a20f-4de9750b98c6)
+![Screenshot 2025-04-30 201009](https://github.com/user-attachments/assets/922760a9-f573-4e46-94d2-240cfb6f1a84)
+
+
