@@ -1,12 +1,42 @@
+TaskManager
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Add Task
+Fields: Title (required), Description, Due Date (required), Priority (Low/Medium/High), Status (To Do/In Progress/Completed).
 
-Currently, two official plugins are available:
+Action: Form submission → Task added to list with auto-generated id and createdAt timestamp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Validation: Ensures title/due date aren’t empty; due date isn’t in the past.
 
-## Expanding the ESLint configuration
+2. Display Tasks
+List View: Shows task title, priority (color-coded dot), status (badge), and due date.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Expandable Details: Click to view full description and creation date.
+
+Visual Cues:
+
+Priority: 🔴 High, 🟡 Medium, 🟢 Low.
+
+Status: Gray (To Do), Blue (In Progress), Green (Completed).
+
+3. Edit Task
+Action: Click "Edit" → Pre-fill form with existing task data.
+
+Save Changes: Updates task in the list with new values (validates inputs).
+
+Cancel: Discards changes without saving.
+
+4. Delete Task
+Action: Click "Delete" → Removes task permanently after confirmation (soft delete optional).
+
+Persistence: Updates localStorage immediately.
+
+Key Features
+Filter/Sort: By status, priority, or due date.
+
+Search: Find tasks by title/description.
+
+Responsive: Works on mobile and desktop.
+
+Tech Used: React, Material UI, Context API, localStorage.
+
